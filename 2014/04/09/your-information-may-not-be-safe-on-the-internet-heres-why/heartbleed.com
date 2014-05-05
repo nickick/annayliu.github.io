@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="csrf-param" content="nH71lfn6Xb9fj/LzpmbQ7i+AdA+968ubDkIwE=" />
+    <meta name="csrf-param" content="wHeRBnTgd7PRHQQ7bKMs6kdGERQqwb5cwXHUw=" />
 
     <title>Ghost Admin</title>
 
