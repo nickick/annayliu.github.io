@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>In Cryptography We Trust? Bitcoin? WTF?</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="In Cryptography We Trust? Bitcoin? WTF?">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="In Cryptography We Trust? Bitcoin? WTF?">
+    <meta property="og:description" content="">
+
+    
+<meta name="twitter:site" content="@annayliu">
+
+
+<meta name="twitter:creator" content="@annayliu">
+
+
+<meta name="google-site-verification" content="">
+
+
+<meta property="fb:admins" content="">
+
+
+    <link href="../../../../favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../../../../apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="http://fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&amp;subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../../assets/css/b3a55bb9.main.min.css?v=4fb938b697"/>
+
+    <script src="../../../../assets/js/8fe6056b.head-scripts.min.js?v=4fb938b697"></script>
+
+    <meta name="generator" content="Ghost 0.4" />
+<link rel="alternate" type="application/rss+xml" title="Thoughts and Musings" href="../../../../rss/index.html">
+<link rel="canonical" href="http://annayliu.com/2014/04/10/bitcoin-for-dummies/" />
+  </head>
+  <body class="post-template tag-tech">
+
+    <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
+<nav tabindex="-1" class="drawer">
+  <div class="drawer-container">
+    <!--.drawer-search(role="search")-->
+    <ul role="navigation" class="drawer-list">
+      
+
+<li class="drawer-list-item">
+  <a href="http://annayliu.com" data-pjax>
+    <i class="fa fa-home"></i>Home
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://medium.com/@annayliu" data-pjax>
+    <i class="fa fa-pencil"></i>Medium
+  </a>
+</li>
+
+<li class="drawer-list-divider"></li>
+<li class="drawer-list-item drawer-list-title">
+  Follow me
+</li>
+<li class="drawer-list-item">
+  <a href="http://linkedin.com/in/annayliu" target="_blank">
+    <i class="fa fa-linkedin"></i>LinkedIn
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://twitter.com/annayliu" target="_blank">
+    <i class="fa fa-twitter"></i>Twitter
+  </a>
+</li>
+<li class="drawer-list-item">
+  <a href="http://github.com/annayliu" target="_blank">
+    <i class="fa fa-github"></i>Github
+  </a>
+</li>
+
+    </ul>
+  </div>
+</nav>
+
+
+    <div class="drawer-overlay"></div>
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+            
+
+<section class="wrapper wrapper-post">
+  <div class="wrapper-container">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post post tag-tech">
+      
+        <section class="post-container">
+          <header class="post-header">
+            <ul class="post-meta-list">
+              <li class="post-meta-item">
+                <time datetime="2014-04-10" itemprop="datePublished">
+                  2 months ago
+                </time>
+              </li>
+              
+                <li class="post-meta-item">
+                  
+                    <span itemprop="articleSection">Tech</span>
+                  
+                </li>
+              
+              <li class="post-meta-item">
+                <a href="index.html#disqus_thread" data-disqus-identifier="46"></a>
+              </li>
+            </ul>
+            <h1 itemprop="name headline" class="post-title"><a href="index.html" itemprop="url" data-pjax title="In Cryptography We Trust? Bitcoin? WTF?">In Cryptography We Trust? Bitcoin? WTF?</a></h1>
+            
+            <!--h2 itemprop="about" class="post-subtitle"></h2-->
+          </header>
+          <aside class="post-side">
+            <div class="post-author">
+              
+                <a href="http://annayliu.com" class="post-author-avatar">
+                  <img src="../../../../content/images/2014/Apr/me.jpg" alt="Anna Liu">
+                </a>
+              
+              <div class="post-author-info">
+                <a href="http://annayliu.com" class="post-author-name">
+                  Anna Liu
+                </a>
+                <p class="post-author-bio">Graduated from Duke. Moved to Silicon Valley. Forever a blue devil.
+</p>
+              </div>
+            </div>
+          </aside>
+          <div itemprop="articleBody" class="post-body">
+            <p>My little Bitcoin 101. This cryptocurrency is pretty darn intriguing.</p>
+
+<p><strong>What is currency?</strong></p>
+
+<p>Currency refers to the fact or quality of being generally accepted or in use. Specifically, the term is synonymous with money in any form that is used or circulated as a viable medium of exchange.</p>
+
+<p><img src="../../../../content/images/2014/Apr/bitcoin.jpg" alt="" /></p>
+
+<p><strong>What is Bitcoin?</strong></p>
+
+<p>Bitcoin is the world’s first decentralized digital currency that relies on cryptography to provide instantaneous peer-to-peer transactions anywhere in the world. Satoshi Nakamoto published the specification for the open-source platform in 2009. Bitcoin’s design is public, nobody owns or controls the virtual currency, and everyone can take part in its development and use.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Um63OQz3bjo" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>Why are people going nuts about Bitcoin?</strong></p>
+
+<p>There are many advantages to Bitcoin. Its transactions require no bank or clearing house approval. It can be used anywhere as long as you have internet access. Your Bitcoin account cannot be frozen as a result of governmental action. And there are no prerequisites or arbitrary limits associated with opening and maintaining a Bitcoin account.</p>
+
+<p><strong>How do I start using Bitcoin?</strong></p>
+
+<p>Download a Bitcoin wallet! A Bitcoin wallet allows you to transact with other users and gives you ownership of a balance with which you can send and receive Bitcoins. You can install a Bitcoin wallet on your phone, tablet, and/or computer. Desktop wallets give you complete control over your wallet, but you are responsible for protecting your money and performing backups. Mobile wallets allow you to bring Bitcoin with you on-the-go. Web-based wallets allow you to use Bitcoin on any browser or mobile and may provide additional services and support as well.</p>
+
+<p>Once you have your Bitcoin wallet installed, it will generate your first Bitcoin address. You can let your friends know of your Bitcoin address so they can pay you and vice versa. It is like how email works, but Bitcoin addresses are only meant to be used once. Don’t worry, you can always generate another Bitcoin addresses when you need it.</p>
+
+<p><strong>How does a Bitcoin transaction work?</strong></p>
+
+<p>The Bitcoin network relies on the block chain, a shared public ledger that includes all confirmed transactions. Users rely on the block chain to calculate their Bitcoin balance and to verify new transactions. Cryptography is employed to enforce the integrity and  chronology of the block chain.</p>
+
+<p><img src="../../../../content/images/2014/Apr/bitcoin-peer-to-peer-network.jpg" alt="" /></p>
+
+<p>A Bitcoin transaction involves a transfer of values between Bitcoin wallets that gets included in the block chain. Bitcoin wallets maintain a private key used to sign transactions, providing mathematical proof that they have come from the owner of the wallet. The signature also prevents transactions from being altered by anyone else once they have been issued.</p>
+
+<p><img src="../../../../content/images/2014/Apr/bitcoin-wallet-set-address.png" alt="" /></p>
+
+<p><strong>How are Bitcoin transactions processed?</strong></p>
+
+<p>Bitcoin transactions are processed through mining, which involves utilizing computer hardware to do mathematical calculations for the Bitcoin network. These calculations are used to confirm waiting transactions that get included in the block chain.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/GmOzih6I1zs" frameborder="0" allowfullscreen></iframe>
+
+<p>Confirmation means that a transaction has been processed and is highly unlikely to be reversible. In order for a transaction to be confirmed, transactions must be packed into a block that fits very strict cryptographic rules, which must then be verified by the network.</p>
+
+<p>As a reward, Bitcoin miners can collect transaction fees, as well as newly created Bitcoins, for their efforts. Bitcoin mining is a specialized and competitive market where miners are rewarded in proportion to the amount of work they’ve done. Not all Bitcoin users are Bitcoin miners. In fact, the mining market has become quite saturated as Bitcoin prices continue to surge.</p>
+
+<p><img src="../../../../content/images/2014/Apr/how-bitcoin-mining-works.jpg" alt="" /></p>
+          </div>
+          <footer class="post-footer">
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+              
+                <a href="http://annayliu.com" class="post-author-avatar">
+                  <img itemprop="image" src="../../../../content/images/2014/Apr/me.jpg" alt="Anna Liu">
+                </a>
+              
+              <div class="post-author-info">
+                <h4 class="post-footer-heading">Written By</h4>
+                <a href="http://annayliu.com" itemprop="url" class="post-author-name">
+                  <span itemprop="name">Anna Liu</span>
+                </a>
+                <p itemprop="description" class="post-author-bio">Graduated from Duke. Moved to Silicon Valley. Forever a blue devil.
+</p>
+                
+                  <p class="post-author-location">San Francisco, CA</p>
+                
+                
+                  <p class="post-author-website">
+                    <a href="http://annayliu.com" rel="nofollow">annayliu.com</a>
+                  </p>
+                
+                <p class="post-info">
+                  <b class="post-info-title">Published on</b>
+                  <time class="post-date">April 10, 2014</time>
+                </p>
+              </div>
+            </div>
+            <div class="post-social">
+              <h4 class="post-footer-heading">Spread the word</h4>
+              <a href="index.html#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+              <a href="index.html#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+              <a href="index.html#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+            </div>
+          </footer>
+        </section>
+      
+      <section itemprop="comment" class="post-comments">
+        <div id="disqus_thread"></div>
+      </section>
+    </article>
+
+    <footer role="contentinfo" class="footer">
+  <p><small>Thoughts and Musings. © 2014. All Rights Reserved.</small></p>
+  <p><small><a href="http://ghostium.oswaldoacauan.com/" target="_blank">Ghostium Theme</a> by <a href="http://twitter.com/oswaldoacauan" target="_blank">@oswaldoacauan</a></small></p>
+  <p><small>Proudly published with <a href="http://ghost.org" target="_blank">Ghost</a></small></p>
+</footer>
+
+  </div>
+</section>
+
+<script type="text/javascript">
+  
+var ga_ua = 'UA-50611605-1';
+
+
+var disqus_shortname = 'annayliu';
+
+
+  
+    var disqus_identifier = '46';
+  
+
+  if(typeof DISQUS !== 'object') {
+    (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../../../../public/jquery.js?v=4fb938b697"></script>
+
+    <script src="../../../../assets/js/56c2364f.foot-scripts.min.js?v=4fb938b697"></script>
+
+    <script type="text/javascript">
+      
+var ga_ua = 'UA-50611605-1';
+
+
+var disqus_shortname = 'annayliu';
+
+
+      (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+      function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+      t.src='//www.google-analytics.com/analytics.js';
+      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+      ga('create',ga_ua);ga('send','pageview');
+
+      (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  </body>
+</html>
